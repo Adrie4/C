@@ -35,7 +35,10 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/CFirstProject.o
+	${OBJECTDIR}/CFirstProject.o \
+	${OBJECTDIR}/FS.o \
+	${OBJECTDIR}/NumberOfWords.o \
+	${OBJECTDIR}/Temperature.o
 
 
 # C Compiler Flags
@@ -66,6 +69,21 @@ ${OBJECTDIR}/CFirstProject.o: CFirstProject.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CFirstProject.o CFirstProject.c
+
+${OBJECTDIR}/FS.o: FS.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FS.o FS.c
+
+${OBJECTDIR}/NumberOfWords.o: NumberOfWords.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumberOfWords.o NumberOfWords.c
+
+${OBJECTDIR}/Temperature.o: Temperature.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Temperature.o Temperature.c
 
 # Subprojects
 .build-subprojects:

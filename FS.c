@@ -26,15 +26,17 @@ int main(int argc, char** argv) {
 
 
         // Deterime first twenty terms of the Fibonacci series
-
-        for (int counter = 1; counter <= 20; counter++) {
+        int counter;
+        for (counter = 1; counter <= 20; counter = counter + 1) {
 
             a = b;
             b = c;
             c = (a + b);
 
-            printf(c);
+            printf("%d\n",c);
 
     return (EXIT_SUCCESS);
 }
+}
+
 

@@ -29,7 +29,7 @@ int main(int argc, char** argv) {
     }
 
 
-void teens(int number) {
+teens(int number) {
 
         switch (number) {
 
@@ -68,7 +68,7 @@ void teens(int number) {
 
     }
 
-void tens(int number) {
+ tens(int number) {
 
         int tens = (number / 10) % 10;
 
@@ -102,7 +102,7 @@ printf ("Ninety");
     }
 
 
- void hundreds(int number) {
+hundreds(int number) {
 
         int hundreds = (number / 100) % 10;
 
@@ -139,7 +139,7 @@ printf ("Six Hundred");
 
     }
 
-void ones(int number) {
+ ones(int number) {
 
         int ones = number % 10;
 

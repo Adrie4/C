@@ -22,7 +22,7 @@ int main(int argc, char** argv) {
         scanf( "%d", & pH);
         
         
-         if( pH < 0 || pH > 14 ) {
+         if( pH < 0 | pH > 14 ) {
             printf( "ERROR");
         }
         else if(pH < 6.5) {

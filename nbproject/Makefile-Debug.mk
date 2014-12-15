@@ -38,6 +38,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/CFirstProject.o \
 	${OBJECTDIR}/FS.o \
 	${OBJECTDIR}/NumberOfWords.o \
+	${OBJECTDIR}/OOPProject.o \
 	${OBJECTDIR}/Temperature.o
 
 
@@ -79,6 +80,11 @@ ${OBJECTDIR}/NumberOfWords.o: NumberOfWords.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumberOfWords.o NumberOfWords.c
+
+${OBJECTDIR}/OOPProject.o: OOPProject.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OOPProject.o OOPProject.c
 
 ${OBJECTDIR}/Temperature.o: Temperature.c 
 	${MKDIR} -p ${OBJECTDIR}

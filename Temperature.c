@@ -14,7 +14,7 @@
 int main(int argc, char** argv) {
             
 
-        String[] dayOfTheWeek = new String[7];
+        const char *dayOfTheWeek[7];
 
         dayOfTheWeek[0] = "Sunday";
         dayOfTheWeek[1] = "Monday";
@@ -24,20 +24,22 @@ int main(int argc, char** argv) {
         dayOfTheWeek[5] = "Friday";
         dayOfTheWeek[6] = "Saturday";
 
-        int[] temperature = new int[7];
-
-        for (int day = 1; day <= 7; day++) {
-            printf("Please Enter the temperature for " + dayOfTheWeek[day - 1] + " : ");
-            scanf(%d, &temperature[day - 1]);
+        int temperature[7];
+        
+        int day;
+        for (day = 0; day <= 6; day = day + 1) {
+            printf( "Please Enter the temperature for " , dayOfTheWeek[day] , " : ");
+            scanf("%d", temperature[day]);
         }
 
-        System.out.println("----RESULTS-----");
+        printf("----RESULTS-----\n");
         int indexOfMax = 0;
-        for (int day = 1; day <= 7; day++) {
-            if (temperature[day - 1] > temperature[indexOfMax]) {
-                indexOfMax = day - 1;
+       
+        for (day = 0; day <= 8; day = day + 1) {
+            if (temperature[day] > temperature[indexOfMax]) {
+                indexOfMax = day;
             }
-            printf("Temperature for " + dayOfTheWeek[day - 1] + " : " + temperature[day - 1] + "\n");
+            printf("Temperature for ",  dayOfTheWeek[day] , " : " ,temperature[day]);
         }
 
     return (EXIT_SUCCESS);

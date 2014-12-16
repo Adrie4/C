@@ -37,6 +37,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/CFirstProject.o \
 	${OBJECTDIR}/FS.o \
+	${OBJECTDIR}/HelloWorldinC.o \
 	${OBJECTDIR}/NumberOfWords.o \
 	${OBJECTDIR}/OOPProject.o \
 	${OBJECTDIR}/Temperature.o
@@ -75,6 +76,11 @@ ${OBJECTDIR}/FS.o: FS.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FS.o FS.c
+
+${OBJECTDIR}/HelloWorldinC.o: HelloWorldinC.c 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/HelloWorldinC.o HelloWorldinC.c
 
 ${OBJECTDIR}/NumberOfWords.o: NumberOfWords.c 
 	${MKDIR} -p ${OBJECTDIR}

@@ -35,12 +35,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/CFirstProject.o \
-	${OBJECTDIR}/FS.o \
-	${OBJECTDIR}/HelloWorldinC.o \
-	${OBJECTDIR}/NumberOfWords.o \
-	${OBJECTDIR}/OOPProject.o \
-	${OBJECTDIR}/Temperature.o
+	${OBJECTDIR}/CFirstProject.o
 
 
 # C Compiler Flags
@@ -71,31 +66,6 @@ ${OBJECTDIR}/CFirstProject.o: CFirstProject.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CFirstProject.o CFirstProject.c
-
-${OBJECTDIR}/FS.o: FS.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/FS.o FS.c
-
-${OBJECTDIR}/HelloWorldinC.o: HelloWorldinC.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/HelloWorldinC.o HelloWorldinC.c
-
-${OBJECTDIR}/NumberOfWords.o: NumberOfWords.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/NumberOfWords.o NumberOfWords.c
-
-${OBJECTDIR}/OOPProject.o: OOPProject.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/OOPProject.o OOPProject.c
-
-${OBJECTDIR}/Temperature.o: Temperature.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Temperature.o Temperature.c
 
 # Subprojects
 .build-subprojects:

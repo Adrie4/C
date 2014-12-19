@@ -13,11 +13,6 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>CFirstProject.c</itemPath>
-      <itemPath>FS.c</itemPath>
-      <itemPath>HelloWorldinC.c</itemPath>
-      <itemPath>NumberOfWords.c</itemPath>
-      <itemPath>OOPProject.c</itemPath>
-      <itemPath>Temperature.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -43,16 +38,6 @@
       </compileType>
       <item path="CFirstProject.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="FS.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="HelloWorldinC.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="NumberOfWords.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="OOPProject.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Temperature.c" ex="false" tool="0" flavor2="0">
-      </item>
     </conf>
     <conf name="Release" type="1">
       <toolsSet>
@@ -75,16 +60,6 @@
         </asmTool>
       </compileType>
       <item path="CFirstProject.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="FS.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="HelloWorldinC.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="NumberOfWords.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="OOPProject.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="Temperature.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -15,31 +15,25 @@ int main(int argc, char** argv) {
 
 
         int menuNum;
-        int ret;
+      
 
 
         printf("1 = IF Statement:PH Level | 2 = Loops:Fibonacci Series| 3 = Array:Temperature| 4 = Methods:Number to Words ");
         printf("Please enter a number for what you would like to see:");
         scanf( "%d", & menuNum);
 
-        switch (menuNum) {
 
+      
+        if (menuNum == 1) {
+            ifStatement();
+        } else if(menuNum == 2){
+           loops();
+        } else if(menuNum == 3){
+           arrays();
+        } else if(menuNum == 4){
 
-            case 1:
-               ret =  ifStatement();
-                break;
-            case 2:
-               ret= loops();
-                break;
-            case 3:
-               ret =  arrays();
-                break;
-            case 4:
-                ret =  methods();
-                break;
-
-
-
+                methods();
+               
 }
 
 void ifStatement(){
@@ -293,5 +287,9 @@ void hundreds(int number) {
 }
  
 } 
-return (EXIT_SUCCESS);
- }
+
+
+return 0;
+}
+
+  
